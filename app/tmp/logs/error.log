@@ -1,0 +1,867 @@
+2019-02-10 14:28:32 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-10 14:39:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'where clause'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppModel), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(39): Model->find('first', Array)
+#7 [internal function]: UsersController->login()
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-02-10 14:39:30 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppModel), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('first', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(39): Model->find('first', Array)
+#7 [internal function]: UsersController->login()
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2019-02-10 15:05:54 Error: [MissingViewException] View file "Users/create_users.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/create_users.ctp',
+)
+Request URL: /cakephp/users/createUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(968): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2019-02-10 15:12:29 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/user/createUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-10 15:12:45 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/user/createUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-02-10 15:14:18 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'name' doesn't have a default value
+Request URL: /cakephp/users/createUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ac...')
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(AppModel), Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(65): Model->save(Array)
+#6 [internal function]: UsersController->createUsers()
+#7 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-10 15:14:48 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'name' doesn't have a default value
+Request URL: /cakephp/users/createUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ac...')
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(AppModel), Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(66): Model->save(Array)
+#6 [internal function]: UsersController->createUsers()
+#7 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-10 15:15:17 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'name' doesn't have a default value
+Request URL: /cakephp/users/createUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ac...')
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(AppModel), Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(66): Model->save(Array)
+#6 [internal function]: UsersController->createUsers()
+#7 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-10 15:15:20 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'name' doesn't have a default value
+Request URL: /cakephp/users/createUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ac...')
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(AppModel), Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(66): Model->save(Array)
+#6 [internal function]: UsersController->createUsers()
+#7 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-10 15:15:21 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'name' doesn't have a default value
+Request URL: /cakephp/users/createUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ac...')
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(AppModel), Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(66): Model->save(Array)
+#6 [internal function]: UsersController->createUsers()
+#7 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-10 15:15:21 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'name' doesn't have a default value
+Request URL: /cakephp/users/createUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ac...')
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(AppModel), Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(66): Model->save(Array)
+#6 [internal function]: UsersController->createUsers()
+#7 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-10 15:19:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'user_group_id' cannot be null
+Request URL: /cakephp/users/createUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ac...')
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(AppModel), Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(68): Model->save(Array)
+#6 [internal function]: UsersController->createUsers()
+#7 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-10 15:24:12 Error: [MissingActionException] Action UsersController::createPrivileges() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'createPrivileges',
+)
+Request URL: /cakephp/users/createPrivileges
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-02-10 15:24:25 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'access_level' doesn't have a default value
+Request URL: /cakephp/users/createUserGroup
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ac...')
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(AppModel), Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(79): Model->save(Array)
+#6 [internal function]: UsersController->createUserGroup()
+#7 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-10 15:29:11 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'privilege_ids' doesn't have a default value
+Request URL: /cakephp/users/createPrivileges
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ac...')
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(AppModel), Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(91): Model->save(Array)
+#6 [internal function]: UsersController->createPrivileges()
+#7 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-10 15:29:58 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'privilege_ids' doesn't have a default value
+Request URL: /cakephp/users/createPrivileges
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('INSERT INTO `ac...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1132): DboSource->execute('INSERT INTO `ac...')
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1942): DboSource->create(Object(AppModel), Array, Array)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(1760): Model->_doSave(Array, Array)
+#5 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(88): Model->save(Array)
+#6 [internal function]: UsersController->createPrivileges()
+#7 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2019-02-10 15:30:29 Error: [MissingActionException] Action UsersController::reportingUsers() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'reportingUsers',
+)
+Request URL: /cakephp/users/reportingUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-02-10 15:48:57 Error: [MissingActionException] Action UsersController::listToReportUsers() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'listToReportUsers',
+)
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-02-10 16:02:08 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 139]
+2019-02-10 16:02:08 Error: [InternalErrorException] Internal Server Error
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 139)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 139, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 139, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-02-10 16:02:15 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 139]
+2019-02-10 16:02:15 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 139)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 139, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 139, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-02-10 16:02:30 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column '0 AS "level"' in 'field list'
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppModel), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(131): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(112): UsersController->getManagers(Array, 0)
+#8 [internal function]: UsersController->listToReportUsers()
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2019-02-10 16:04:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppModel), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(131): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(112): UsersController->getManagers(Array, 0)
+#8 [internal function]: UsersController->listToReportUsers()
+#9 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2019-02-10 16:07:31 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'reporting_manager_ids)' at line 1
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppModel), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(133): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(140): UsersController->getManagers(Array, 1)
+#8 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(112): UsersController->getManagers(Array, 0)
+#9 [internal function]: UsersController->listToReportUsers()
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-02-10 16:08:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'reporting_manager_ids)' at line 1
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppModel), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(133): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(140): UsersController->getManagers(Array, 1)
+#8 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(112): UsersController->getManagers(Array, 0)
+#9 [internal function]: UsersController->listToReportUsers()
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-02-10 16:09:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'where clause'
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppModel), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(132): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(137): UsersController->getManagers(Array, 1)
+#8 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(112): UsersController->getManagers('1', 0)
+#9 [internal function]: UsersController->listToReportUsers()
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-02-10 16:10:09 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'reporting_manager_ids)' at line 1
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppModel), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(132): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(137): UsersController->getManagers(NULL, 1)
+#8 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(112): UsersController->getManagers('1', 0)
+#9 [internal function]: UsersController->listToReportUsers()
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-02-10 16:10:40 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'reporting_manager_ids)' at line 1
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppModel), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('all', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(132): Model->find('all', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(137): UsersController->getManagers(NULL, 1)
+#8 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(112): UsersController->getManagers('1', 0)
+#9 [internal function]: UsersController->listToReportUsers()
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-02-10 16:20:53 Error: Fatal Error (1): Call to undefined function getBus() in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 151]
+2019-02-10 16:20:53 Error: [FatalErrorException] Call to undefined function getBus()
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 151)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 151, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 151, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-02-10 16:21:15 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes) in [/Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php, line 2041]
+2019-02-10 16:21:15 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 79 bytes)
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/Applications/M...', 2041)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/Applications/M...', 2041, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/Applications/M...', 2041, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-02-10 16:37:58 Error: Fatal Error (1): Call to undefined function getManagers() in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 139]
+2019-02-10 16:37:58 Error: [FatalErrorException] Call to undefined function getManagers()
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 139)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 139, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 139, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-02-10 16:38:09 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'reporting_manager_ids)' at line 1
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(502): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(468): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(715): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php(1226): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3040): DboSource->read(Object(AppModel), Array)
+#5 /Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Model.php(3012): Model->_readDataSource('list', Array)
+#6 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(134): Model->find('list', Array)
+#7 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(139): UsersController->getManagers('', 1)
+#8 /Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php(113): UsersController->getManagers('1', 0)
+#9 [internal function]: UsersController->listToReportUsers()
+#10 /Applications/MAMP/htdocs/cakephp/lib/Cake/Controller/Controller.php(499): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2019-02-10 16:39:24 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 78 bytes) in [/Applications/MAMP/htdocs/cakephp/lib/Cake/Model/Datasource/DboSource.php, line 2087]
+2019-02-10 16:39:24 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 78 bytes)
+Request URL: /cakephp/users/listToReportUsers
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Allowed memory ...', '/Applications/M...', 2087)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', '/Applications/M...', 2087, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', '/Applications/M...', 2087, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'User' in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 115]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'User' in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 115]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'User' in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 115]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'User' in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 115]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'User' in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 115]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 115
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 11]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 11
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'groups' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 12]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 12
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'address' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 13]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 13
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'created' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 14]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 14
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 11]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 11
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'groups' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 12]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 12
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'address' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 13]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 13
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'created' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 14]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 14
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 11]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 11
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'groups' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 12]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 12
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'address' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 13]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 13
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'created' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 14]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 14
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 11]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 11
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'groups' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 12]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 12
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'address' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 13]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 13
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'created' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 14]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 14
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'name' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 11]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 11
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'groups' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 12]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 12
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'address' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 13]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 13
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 16:42:16 Warning: Warning (2): Illegal string offset 'created' in [/Applications/MAMP/htdocs/cakephp/app/View/Users/reporting_users.ctp, line 14]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Users/reporting_users.ctp, line 14
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 968
+UsersController::listToReportUsers() - APP/Controller/UsersController.php, line 124
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 499
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 118
+
+2019-02-10 17:10:05 Error: Fatal Error (1): Call to undefined method UsersController::setFlash() in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 82]
+2019-02-10 17:10:05 Error: [InternalErrorException] Internal Server Error
+Request URL: /cakephp/users/createUserGroup
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 82)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 82, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 82, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-02-10 17:10:22 Error: Fatal Error (1): Call to undefined method UsersController::setFlash() in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 82]
+2019-02-10 17:10:22 Error: [FatalErrorException] Call to undefined method UsersController::setFlash()
+Request URL: /cakephp/users/createUserGroup
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 82)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 82, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 82, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-02-10 17:11:11 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /cakephp/users/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/MAMP/htdocs/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Applications/MAMP/htdocs/cakephp/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2019-02-10 17:21:45 Error: Fatal Error (1): Call to undefined method SessionComponent::flash() in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 52]
+2019-02-10 17:21:45 Error: [InternalErrorException] Internal Server Error
+Request URL: /cakephp/users/dashboard
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 52, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 52, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-02-10 17:21:51 Error: Fatal Error (1): Call to undefined method SessionComponent::flash() in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 52]
+2019-02-10 17:21:51 Error: [FatalErrorException] Call to undefined method SessionComponent::flash()
+Request URL: /cakephp/users/dashboard
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/M...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/M...', 52, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/M...', 52, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2019-02-10 17:34:53 Error: Fatal Error (4): syntax error, unexpected 'well' (T_STRING), expecting ',' or ';' in [/Applications/MAMP/htdocs/cakephp/app/Controller/UsersController.php, line 43]
+2019-02-10 17:34:53 Error: [InternalErrorException] Internal Server Error
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cakephp/lib/Cake/Error/ErrorHandler.php(212): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/M...', 43)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/M...', 43, Array)
+#2 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/M...', 43, Array)
+#3 /Applications/MAMP/htdocs/cakephp/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
