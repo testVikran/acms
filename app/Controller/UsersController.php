@@ -141,11 +141,22 @@ class UsersController extends AppController {
 				foreach ($ids as $k => $v) {
 					$data[$key]['groups'][] = $groupList[$v];
 				}
+				$data[$key]['groups'] = implode(",", $data[$key]['groups']);
 			}
 		}
 		$this->set('title','Users Reported By '.$userInfo['name']);
 		$this->set('reporters',$data);
 		$this->render('reporting_users');
+	}
+	function getUsersToReport($ids,&$rsp){
+		$usersList = $this->User->find('all', array('conditions' =>array('id' => explode(",", $ids))));
+		foreach ($usersList as $key => $value) {
+			$rsp[] = $value;
+			if($value['User']['reporting_manager_ids']){
+				$rsp = array_merge($rsp,getUsersToReport($value['User']['reporting_manager_ids'],$rsp));
+			}
+		}
+		return $rsp;
 	}
 	function listUserGroup(){
 		$this->checkLogin();
