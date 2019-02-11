@@ -121,6 +121,7 @@ class UsersController extends AppController {
 				foreach ($ids as $k => $v) {
 					$data[$key]['groups'][] = $groupList[$v];
 				}
+				$data[$key]['groups'] = implode(',', $data[$key]['groups']);
 			}
 		}
 		$this->set('title','Users Reporting to '.$userInfo['name']);
